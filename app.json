@@ -1,0 +1,35 @@
+{
+  "id": "ba39e3e6-d189-4afe-b7d6-c842119d70b0",
+  "name": "al",
+  "publisher": "Default publisher",
+  "version": "1.0.0.0",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "21.0.0.0",
+  "idRanges": [
+    {
+      "from": 50100,
+      "to": 50149
+    }
+  ],
+  "dependencies": [
+		{ "id": "6f0293d3-86fc-4ff8-9632-54a580be6546", "publisher": "ForNAV", "name": "ForNAV Core", "version": "4.0.0.0" },
+		{ "id": "83326d6d-11f8-49fd-981a-6f266a7c8d81", "publisher": "ForNAV", "name": "Customizable Report Pack", "version": "0.0.0.0" }
+	],
+ "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "10.0",
+  "features": [
+    "NoImplicitWith"
+  ]
+}
