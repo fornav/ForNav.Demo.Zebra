@@ -22,7 +22,6 @@ pageextension 50100 ItemListExt extends "Item List"
                     base64, zpl : Text;
                     zplInStream: InStream;
                     zplOutStream: OutStream;
-                // bt: BigText;
                 begin
                     // Get Zebra language from stored base64 string
                     base64 := 'Q1R+fkNELH5DQ15+Q1R+Cl5YQX5UQTAwMH5KU05eTFQwXk1OV15NVEReUE9OXlBNTl5MSDAsMF5KTUFeUFI1LDV+U0QxNV5KVVNeTFJOXkNJMF5YWgpeWEEKXk1NVApeUFc2MDkKXkxMMDQwNgpeTFMwCl5CWTQsMyw4NF5GVDEwMiwxOTleQkNOLCxZLE4KXkZEPjp7Tk99XkZTCl5GVDEwMiw4MF5BME4sMjgsMjheRkhcXkZEe0RFU0NSSVBUSU9OfV5GUwpeUFExLDAsMSxZXlha';
@@ -30,11 +29,6 @@ pageextension 50100 ItemListExt extends "Item List"
 
                     // Replace the placeholders with the real data
                     zpl := zpl.Replace('{NO}', Rec."No.").Replace('{DESCRIPTION}', Rec.Description);
-
-                    // bt.AddText(zpl);
-                    // tempBlob.CreateOutStream(os);
-                    // bt.Write(os);
-                    // tempBlob.CreateInStream(is);
 
                     // Create an InStream with the Zebra language
                     tempBlob.CreateOutStream(zplOutStream);
